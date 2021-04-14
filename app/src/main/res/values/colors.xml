@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F1C40F</color>
+    <color name="colorPrimaryDark">#E67E22</color>
+    <color name="colorAccent">#F39C12</color>
+    <color name="colorFood">#fa8000</color>
+    <color name="colorShopping">#f5deb3</color>
+    <color name="colorEntertain">#ffd500</color>
+    <color name="colorMedical">#ffe384</color>
+    <color name="colorPay">#ed9121</color>
+    <color name="colorTransportation">#ffff00</color>
+    <color name="colorOther">#ff6347</color>
+<!--    "#ff6347","#f5deb3","#fa8000","#ffe384","#ed9121","#ffff00","#ffd700"-->
+
+</resources>

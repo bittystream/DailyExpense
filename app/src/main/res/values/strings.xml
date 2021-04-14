@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DailyExpense</string>
+    <string name="transportation">&#xf1b9;</string>
+    <string name="food">&#xf0f5;</string>
+    <string name="shopping">&#xf07a;</string>
+    <string name="pay">&#xf09d;</string>
+    <string name="entertain">&#xf0c0;</string>
+    <string name="medical">&#xf0fa;</string>
+    <string name="other">&#xf004;</string>
+    <string name="title_activity_today">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="pie_chart">&#xf200;</string>
+    <string name="money">&#xf0d6;</string>
+    <string name="records">&#xf249;</string>
+    <string name="ascending">&#xf0de;</string>
+    <string name="descending">&#xf0dd;</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

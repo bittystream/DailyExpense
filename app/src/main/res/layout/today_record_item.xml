@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:background="#f6f6f6"
+    android:longClickable="true"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/today_record_icon_text"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/record_class_button"
+        android:fontFamily="@font/font_awesome"
+        android:padding="10dp"
+        android:text="@string/other"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/today_record_usage_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="用途描述描述描述描述"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/today_record_icon_text"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/today_record_class_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="其他"
+        app:layout_constraintStart_toStartOf="@+id/today_record_usage_text"
+        app:layout_constraintTop_toBottomOf="@+id/today_record_usage_text"></TextView>
+
+    <TextView
+        android:id="@+id/today_record_expense_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="88.88"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/record_icon_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"></TextView>
+
+</android.support.constraint.ConstraintLayout>

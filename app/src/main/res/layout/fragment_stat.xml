@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".StatFragment"
+    android:paddingBottom="130dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <cn.edu.cqu.dailyexpense.ChartView
+                android:id="@+id/chart_view"
+                android:layout_width="match_parent"
+                android:layout_height="332dp"></cn.edu.cqu.dailyexpense.ChartView>
+            <TextView
+                android:id="@+id/stat_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本x账单总额为y元"
+                android:layout_marginStart="24dp"
+                android:textSize="30sp"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/StatItem">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="      "
+                    android:textSize="40sp"
+                    android:background="@color/colorFood"></TextView>
+                <TextView
+                    android:id="@+id/stat_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/StatItemText"
+                    android:text="餐饮共支出xx元，占%"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/StatItem">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="      "
+                    android:textSize="40sp"
+                    android:background="@color/colorShopping"></TextView>
+                <TextView
+                    android:id="@+id/stat_shopping"
+                    android:layout_width="wrap_content"
+                    style="@style/StatItemText"
+                    android:layout_height="wrap_content"
+                    android:text="购物共支出xx元，占%"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/StatItem">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="      "
+                    android:textSize="40sp"
+                    android:background="@color/colorEntertain"></TextView>
+                <TextView
+                    android:id="@+id/stat_entertain"
+                    android:layout_width="wrap_content"
+                    style="@style/StatItemText"
+                    android:layout_height="wrap_content"
+                    android:text="娱乐共支出xx元，占%"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/StatItem">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="      "
+                    android:textSize="40sp"
+                    android:background="@color/colorMedical"></TextView>
+                <TextView
+                    android:id="@+id/stat_medical"
+                    android:layout_width="wrap_content"
+                    style="@style/StatItemText"
+                    android:layout_height="wrap_content"
+                    android:text="{分类}共支出xx元，占%"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/StatItem">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="      "
+                    android:textSize="40sp"
+                    android:background="@color/colorPay"></TextView>
+                <TextView
+                    android:id="@+id/stat_pay"
+                    style="@style/StatItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="{分类}共支出xx元，占%"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/StatItem">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="      "
+                    android:textSize="40sp"
+                    android:background="@color/colorTransportation"></TextView>
+                <TextView
+                    android:id="@+id/stat_transportation"
+                    style="@style/StatItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="{分类}共支出xx元，占%"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                style="@style/StatItem">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="      "
+                    android:textSize="40sp"
+                    android:background="@color/colorOther"></TextView>
+                <TextView
+                    android:id="@+id/stat_other"
+                    style="@style/StatItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="{分类}共支出xx元，占%"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="center"
+        android:background="#fafafa"
+        app:tabTextAppearance="@style/TabTextAppearance"
+        ></android.support.design.widget.TabLayout>
+
+</FrameLayout>
